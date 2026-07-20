@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seru untuk Anak — Pustaka Aksara</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .page-section.hero.hero-galeri {
+      background-image: url('images/hero-galeri.jpg');
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--green);
+      margin-bottom: 18px;
+    }
+
+    .back-link:hover {
+      color: var(--green-dark);
+    }
+
+    .ilustrasi-bab {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 14px;
+      box-shadow: 0 4px 12px rgba(18, 36, 26, 0.1);
+      border: 1px solid #e2d8bb;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="nav-inner">
+      <a class="logo" href="index.html"><span class="mark">P</span> Pustaka Aksara</a>
+      <nav class="nav-menu">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="tentang.html">Tentang Kami</a>
+        <a class="nav-link" href="layanan.html">Layanan</a>
+        <a class="nav-link active" href="galeri.html">Galeri</a>
+        <a class="nav-link" href="tim.html">Tim</a>
+        <a class="nav-link" href="blog.html">Blog</a>
+        <a class="nav-link" href="faq.html">FAQ</a>
+        <a class="nav-link" href="kontak.html">Kontak</a>
+      </nav>
+      <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="tentang.html">Tentang Kami</a>
+      <a href="layanan.html">Layanan/Produk</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="tim.html">Tim</a>
+      <a href="blog.html">Blog/Berita</a>
+      <a href="faq.html">FAQ</a>
+      <a href="kontak.html">Kontak</a>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-section hero hero-galeri">
+      <div class="wrap">
+        <a href="galeri.html" class="back-link">&larr; Kembali ke Galeri</a>
+        <div class="eyebrow">Rak Anak</div>
+        <h1>Seru untuk Anak</h1>
+
+        <div class="book-reader">
+          <div class="book-cover-card">
+            <div class="book-cover"
+              style="background-image:url('images/sampul-anak.png'); background-size:cover; background-position:center;">
+            </div>
+          </div>
+
+          <div class="book-content">
+            <h3>Seru untuk Anak</h3>
+            <p>Buku ceria yang mengasah imajinasi dan belajar. Penerbit Cerita Ceria &bull; 2026</p>
+
+            <div class="book-section">
+              <h4>Bab 1: Petualangan di Hutan Warna</h4>
+              <p>Di sebuah tempat yang tidak jauh dari mimpi kita, terdapat sebuah Hutan Warna. Pohon-pohon di sana
+                memiliki daun berwarna merah muda, biru, dan ungu! Setiap pagi, si Kelinci Jingga bernama Kiko selalu
+                melompat gembira menyapa matahari.</p>
+              <img src="images/ilustrasi1.jpg" alt="Ilustrasi Bab 1" class="ilustrasi-bab">
+            </div>
+
+            <div class="book-section">
+              <h4>Bab 2: Misteri Huruf yang Hilang</h4>
+              <p>Suatu hari, Kiko menemukan sebuah papan petunjuk besar. Namun, semua huruf di papan itu sedang
+                bersembunyi di balik semak-semak! "Ayo kita bantu Kiko mencari huruf A, B, dan C!" seru burung bijak
+                dari atas dahan.</p>
+              <img src="images/ilustrasi2.jpg" alt="Ilustrasi Bab 2" class="ilustrasi-bab">
+            </div>
+
+            <div class="book-section">
+              <h4>Bab 3: Berbagi Cerita Bersama Teman</h4>
+              <p>Setelah semua huruf terkumpul, papan tersebut membentuk tulisan: "BELAJAR ITU SERU!". Kiko dan
+                teman-temannya mengadakan pesta buah di bawah sinar matahari yang hangat. Mereka tahu, dengan membaca
+                dan belajar, dunia akan terasa lebih indah dan penuh keajaiban.</p>
+              <img src="images/ilustrasi3.jpg" alt="Ilustrasi Bab 3" class="ilustrasi-bab">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h5>Pustaka Aksara</h5>
+          <p>Perpustakaan digital yang menemani setiap langkah membaca Anda.</p>
+        </div>
+        <div>
+          <h5>Navigasi</h5>
+          <a href="index.html">Home</a><a href="tentang.html">Tentang Kami</a><a href="layanan.html">Layanan</a>
+        </div>
+        <div>
+          <h5>Lainnya</h5>
+          <a href="galeri.html">Galeri</a><a href="tim.html">Tim</a><a href="blog.html">Blog</a>
+        </div>
+        <div>
+          <h5>Ikuti Kami</h5>
+          <a href="#">Instagram</a><a href="#">Facebook</a><a href="#">X (Twitter)</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

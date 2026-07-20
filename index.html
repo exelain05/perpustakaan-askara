@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pustaka Aksara — Perpustakaan Digital</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .page-section.hero.hero-home{background-image:url('images/hero-home.jpg');}
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      corePlugins: {
+        preflight: false,
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="nav-inner">
+      <a class="logo" href="index.html"><span class="mark">P</span> Pustaka Aksara</a>
+      <nav class="nav-menu">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="tentang.html">Tentang Kami</a>
+        <a class="nav-link" href="layanan.html">Layanan</a>
+        <a class="nav-link" href="galeri.html">Galeri</a>
+        <a class="nav-link" href="tim.html">Tim</a>
+        <a class="nav-link" href="blog.html">Blog</a>
+        <a class="nav-link" href="faq.html">FAQ</a>
+        <a class="nav-link" href="kontak.html">Kontak</a>
+      </nav>
+      <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="tentang.html">Tentang Kami</a>
+      <a href="layanan.html">Layanan/Produk</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="tim.html">Tim</a>
+      <a href="blog.html">Blog/Berita</a>
+      <a href="faq.html">FAQ</a>
+      <a href="kontak.html">Kontak</a>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-section hero hero-home">
+      <div class="wrap hero-layout">
+        <div>
+          <div class="eyebrow">Perpustakaan Digital</div>
+          <h1>Rumah baca untuk setiap <em>rasa ingin tahu</em>.</h1>
+          <p class="lead">Pustaka Aksara menghadirkan koleksi buku digital, ruang baca virtual, dan program literasi yang mudah diakses dari mana saja.</p>
+          <div class="hero-cta">
+            <a href="blog.html" class="btn">Lihat kabar buku & promo</a>
+            <a href="tentang.html" class="btn ghost">Tentang kami</a>
+          </div>
+          <div class="stats">
+            <div class="stat"><b id="statBuku">—</b><span>Koleksi Buku</span></div>
+            <div class="stat"><b>12.400+</b><span>Anggota Aktif</span></div>
+            <div class="stat"><b>18</b><span>Kategori</span></div>
+            <div class="stat"><b id="statPengunjung">—</b><span>Pengunjung Hari Ini</span></div>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <div class="panel-card">
+            <div class="panel-list">
+              <div class="panel-item">📚 Buku baru setiap minggu</div>
+              <div class="panel-item">🎁 Promo khusus anggota</div>
+              <div class="panel-item">📝 Workshop menulis & diskusi</div>
+              <div class="panel-item">🌿 Koleksi lokal dan modern</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- BANNER PROMO / KOTAK PENGUMUMAN (Tailwind CSS) -->
+  <section class="max-w-[1180px] mx-auto px-7 mb-12">
+    <div class="relative overflow-hidden bg-gradient-to-br from-[#1B3620] to-[#2C5233] rounded-[8px] p-8 md:p-12 shadow-lg border border-[#BE8A3D]/20">
+      <!-- Decorative background pattern (ambient glows) -->
+      <div class="absolute -right-16 -top-16 w-64 h-64 bg-[#BE8A3D]/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -left-16 -bottom-16 w-64 h-64 bg-[#7A3527]/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+        <div class="max-w-2xl">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#BE8A3D] text-[#12241A] uppercase tracking-wider mb-4 shadow-sm animate-pulse">
+            ✨ Pengumuman Spesial
+          </span>
+          <h2 class="text-3xl md:text-4xl text-[#F5EEDD] font-serif font-bold leading-tight mb-3">
+            Mulai Petualangan Membaca Tanpa Batas!
+          </h2>
+          <p class="text-[#F5EEDD]/80 text-sm md:text-base leading-relaxed">
+            Bergabunglah menjadi anggota **Pustaka Aksara Premium** hari ini. Dapatkan akses penuh ke ribuan e-book, ruang diskusi sastra eksklusif, serta diskon **20%** untuk pemesanan buku fisik perdana Anda.
+          </p>
+        </div>
+        
+        <div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto shrink-0">
+          <a href="kontak.html" class="inline-flex items-center justify-center px-6 py-3 bg-[#BE8A3D] hover:bg-[#E4BE7C] text-[#12241A] font-semibold rounded-[6px] transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-md text-center">
+            Daftar Sekarang
+          </a>
+          <a href="layanan.html" class="inline-flex items-center justify-center px-6 py-3 border border-[#F5EEDD]/30 hover:border-[#F5EEDD] hover:bg-[#F5EEDD]/10 text-[#F5EEDD] font-semibold rounded-[6px] transition-all duration-300 text-center">
+            Pelajari Detail
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h5>Pustaka Aksara</h5>
+          <p>Perpustakaan digital yang menemani setiap langkah membaca Anda.</p>
+        </div>
+        <div>
+          <h5>Navigasi</h5>
+          <a href="index.html">Home</a><a href="tentang.html">Tentang Kami</a><a href="layanan.html">Layanan</a>
+        </div>
+        <div>
+          <h5>Lainnya</h5>
+          <a href="galeri.html">Galeri</a><a href="tim.html">Tim</a><a href="blog.html">Blog</a>
+        </div>
+        <div>
+          <h5>Ikuti Kami</h5>
+          <a href="#">Instagram</a><a href="#">Facebook</a><a href="#">X (Twitter)</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const defaultBooks = [
+      { id: 1, judul: 'Jejak Senja di Tanah Rencong', penulis: 'Rahma Dwi Anjani', kategori: 'Novel', status: 'SEGERA TERBIT', warna: '#2A3B54', tanggal: '20 Agustus 2026', deskripsi: 'Kisah pulang kampung dan makna rumah kembali hadir. Pra-pesan dibuka minggu ini dengan bonus bookmark eksklusif.' },
+      { id: 2, judul: 'Filosofi Teras Digital', penulis: 'Yoga Pradana', kategori: 'Non-Fiksi', status: 'BARU RILIS', warna: '#2C5233', tanggal: 'Tersedia sekarang', deskripsi: 'Panduan hidup tenang di tengah dunia digital. Diskon 20% untuk anggota selama bulan ini.' },
+      { id: 3, judul: 'Rahasia Perpustakaan Tua', penulis: 'Salsabila Putri', kategori: 'Fantasi', status: 'PROMO PRA-PESAN', warna: '#7A3527', tanggal: 'September 2026', deskripsi: 'Petualangan penuh teka-teki di rak buku tertua. Pemesan awal mendapat voucher workshop gratis.' },
+      { id: 4, judul: 'Kopi, Buku, dan Kita', penulis: 'Nadia Kirana', kategori: 'Fiksi', status: 'PROMO BUY 1 GET 1', warna: '#5B6B3F', tanggal: 'Akhir pekan ini', deskripsi: 'Novel ringan tentang pertemuan dua orang asing di kedai buku, tersedia dengan promo spesial akhir pekan.' }
+    ];
+
+    function badgeColor(status) {
+      if (status.includes('BARU')) return '#2C5233';
+      if (status.includes('SEGERA')) return '#BE8A3D';
+      return '#7A3527';
+    }
+
+    async function initBooks() {
+      const grid = document.getElementById('blogGrid');
+      if (!grid) return;
+
+      let list = defaultBooks;
+      try {
+        if (window.storage) {
+          const res = await window.storage.get('buku-list', true);
+          list = JSON.parse(res.value);
+        }
+      } catch (e) {
+        list = defaultBooks;
+      }
+
+      renderBooks(list);
+      const statBuku = document.getElementById('statBuku');
+      if (statBuku) statBuku.textContent = (1200 + list.length) + '+';
+    }
+
+    function renderBooks(list) {
+      const grid = document.getElementById('blogGrid');
+      if (!grid) return;
+      grid.innerHTML = '';
+
+      list.forEach((b) => {
+        const el = document.createElement('div');
+        el.className = 'post';
+        el.innerHTML = `
+          <div class="post-bar" style="background:${b.warna};"></div>
+          <div class="post-body">
+            <span class="badge" style="background:${badgeColor(b.status)};">${b.status}</span>
+            <h4>${b.judul}</h4>
+            <div class="post-meta"><span>${b.penulis}</span><span>•</span><span>${b.kategori}</span><span>•</span><span>${b.tanggal}</span></div>
+            <div class="post-desc"><p>${b.deskripsi}</p></div>
+            <span class="post-more">Baca selengkapnya</span>
+          </div>`;
+
+        const more = el.querySelector('.post-more');
+        const desc = el.querySelector('.post-desc');
+        more.addEventListener('click', () => {
+          desc.classList.toggle('open');
+          more.textContent = desc.classList.contains('open') ? 'Tutup' : 'Baca selengkapnya';
+        });
+
+        grid.appendChild(el);
+      });
+    }
+
+    async function initVisitorCounter() {
+      const statPengunjung = document.getElementById('statPengunjung');
+      if (!statPengunjung) return;
+
+      let count = 1;
+      try {
+        if (window.storage) {
+          const res = await window.storage.get('visitor-count', true);
+          count = parseInt(res.value, 10) + 1;
+        }
+      } catch (e) {
+        count = 1;
+      }
+
+      try {
+        if (window.storage) await window.storage.set('visitor-count', String(count), true);
+      } catch (e) {}
+
+      statPengunjung.textContent = count;
+    }
+
+    async function refreshPesanCounter() {
+      const pesanCounter = document.getElementById('pesanCounter');
+      if (!pesanCounter) return;
+
+      let total = 0;
+      try {
+        if (window.storage) {
+          const res = await window.storage.get('total-pesan', true);
+          total = parseInt(res.value, 10);
+        }
+      } catch (e) {
+        total = 0;
+      }
+
+      let mine = 0;
+      try {
+        if (window.storage) {
+          const res2 = await window.storage.list('pesan:', false);
+          mine = res2.keys ? res2.keys.length : 0;
+        }
+      } catch (e) {
+        mine = 0;
+      }
+
+      pesanCounter.textContent = `Total pesan yang telah diterima: ${total}${mine ? ' • Anda telah mengirim ' + mine + ' pesan' : ''}`;
+    }
+
+    const form = document.getElementById('contactForm');
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const nama = document.getElementById('fNama').value.trim();
+        const email = document.getElementById('fEmail').value.trim();
+        const pesan = document.getElementById('fPesan').value.trim();
+        const msgBox = document.getElementById('formMsg');
+        if (!nama || !email || !pesan) return;
+
+        try {
+          if (window.storage) {
+            await window.storage.set('pesan:' + Date.now(), JSON.stringify({ nama, email, pesan, waktu: new Date().toISOString() }), false);
+            let total = 0;
+            const res = await window.storage.get('total-pesan', true);
+            total = parseInt(res.value, 10);
+            await window.storage.set('total-pesan', String(total + 1), true);
+          }
+
+          msgBox.textContent = `Terima kasih, ${nama}. Pesan Anda sudah kami terima.`;
+          msgBox.className = 'form-msg show ok';
+          e.target.reset();
+          refreshPesanCounter();
+        } catch (err) {
+          msgBox.textContent = 'Maaf, terjadi kendala saat menyimpan pesan. Coba lagi sebentar.';
+          msgBox.className = 'form-msg show ok';
+        }
+      });
+    }
+
+    document.querySelectorAll('.faq-item').forEach((item) => {
+      item.querySelector('.faq-q').addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach((i) => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+
+    const burgerBtn = document.getElementById('burgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (burgerBtn && mobileMenu) {
+      burgerBtn.addEventListener('click', () => mobileMenu.classList.toggle('show'));
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => mobileMenu.classList.remove('show')));
+    }
+
+    const navLinks = document.querySelectorAll('.nav-link');
+    const pageName = window.location.pathname.split('/').pop() || 'index.html';
+    const currentPage = pageName === 'index.html' ? 'home' : pageName.replace('.html', '');
+
+    navLinks.forEach((link) => {
+      const href = link.getAttribute('href') || '';
+      const target = href === 'index.html' ? 'home' : href.replace('.html', '');
+      if (target === currentPage) link.classList.add('active');
+    });
+
+    const topBtn = document.getElementById('topBtn');
+    if (topBtn) {
+      window.addEventListener('scroll', () => {
+        topBtn.classList.toggle('show', window.scrollY > 500);
+      });
+      topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    }
+
+    initBooks();
+    initVisitorCounter();
+    refreshPesanCounter();
+  </script>
+</body>
+</html>
